@@ -1,0 +1,58 @@
+.skills {
+  background: $colorBackground;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.skills__wrapper{
+  padding-bottom: 100px;
+  padding-top: 98px;
+}
+
+.skill-card__icon {
+  text-align: center;
+}
+
+.icon_digital {
+  background-image: url(image/svg/camera1.svg);
+  width: 62px;
+  height: 50px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}  
+
+.icon_video {
+  background-image: url(image/svg/video1.svg);
+  width: 60px;
+  height: 50px;
+}  
+
+.icon_retouch {
+  background-image: url(image/svg/retouch1.svg);
+  width: 66px;
+  height: 50px;
+}
+
+.icon_audio {
+  background-image: url(image/svg/mic1.svg);
+  width: 32px;
+  height: 50px;
+  margin-left: 25px;
+}
+
+.skill-card__title {
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+
+.skill-card__text {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  max-width: 280px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+}
+

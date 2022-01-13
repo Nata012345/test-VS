@@ -1,0 +1,75 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #c2b6af;
+  margin: 0;
+  color: $color-text;
+  
+
+}
+
+.main {
+  background: $colorBackground;
+  max-width: 1440px;
+  margin: auto;
+  
+}
+
+h1 {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: $color-text;
+}
+
+h2 {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: $color-brand;
+}
+
+h3 {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 28px;
+  line-height: 56px;
+  color: $color-text;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: $color-text;
+}
+
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: $color-text;
+}
+
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: $color-text;
+}
+

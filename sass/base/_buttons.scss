@@ -1,0 +1,43 @@
+.button {
+  padding: 7px 72px 7px 71px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.button_bordered {
+  background: $colorBackground;
+  border: 2px solid $color-brand;
+  color: $color-brand;
+}
+
+.button_bordered:hover {
+  color: $color-text;
+}
+
+.button_colored {
+  background: $color-brand;
+  color: $colorTextHoverButton;
+  border: 2px solid $color-brand;
+}
+
+.button_colored:hover {
+  color: $color-text;
+}
+
+.button_colored-longText {
+  padding: 7px 39px 7px 39px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+

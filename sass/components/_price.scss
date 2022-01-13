@@ -1,0 +1,49 @@
+.price {
+  max-width: 1440px;
+  background: $colorBackground;
+  margin: auto;
+}
+
+.price__wrapper {
+  padding-bottom: 100px;
+}
+
+.bigCard_bordered {
+  border: 3px solid $color-brand;
+}
+
+.bigCard__title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.bigCard__price {
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  color: $color-brand;
+  margin: 0 0 20px;
+}
+
+.bigCard__text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: $color-text;
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+.bigCard__button {
+  text-align: center;
+  padding-bottom: 43px;
+}
+
+.text {
+  margin: 0;
+}

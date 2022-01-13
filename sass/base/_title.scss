@@ -1,0 +1,138 @@
+// .title_container {
+//   overflow: hidden;//чтобы линии не выходили за ширину блока заголовка
+//   width: 50%;
+//   margin: 0 auto;
+//   padding-bottom: 60px;
+
+  //text-align: center;
+  // width: 50%;
+  // margin: 0 auto;
+  // overflow: hidden;
+// }
+
+// .title__name {
+//   margin:  0 auto;
+//   transform: translateX(-7%)
+
+  //position: relative;
+// }
+
+// .title__name::before {
+//   content: '';
+//   display: inline-block;
+//   vertical-align: middle;//выравниваем вертикально по середине
+//   box-sizing: border-box;
+//   width: 50%;
+//   background: $colorBackground;
+//   border: 1px solid $color-brand;
+//   position: relative;
+//   //margin-left: 100%;
+//   left: -20px;
+
+  // display: block;
+  // width: 50%;
+  // background: $colorBackground;
+  // content: '';
+  // position: absolute;
+  // border-bottom: 1px solid $color-brand;
+  // top: 50%;
+  // right: 110px;
+// }
+
+// .title__name::after {
+//   content: '';
+//   display: inline-block;
+//   vertical-align: middle;
+//   box-sizing: border-box;
+//   width: 50%;
+//   background: $colorBackground;
+//   border: 1px solid $color-brand;
+//   margin-right: -100%;
+//   position: relative;
+//   right: -20px;
+
+  // display: block;
+  // width: 50%;
+  // background: $colorBackground;
+  // content: '';
+  // position: absolute;
+  // border-bottom: 1px solid $color-brand;
+  // top: 50%;
+  // left: 110px;
+// }
+
+.title {
+  padding-bottom: 60px;
+}
+
+.title__name {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 700px;
+  position: relative;
+  
+}
+
+.title__name:before {
+  content: "";
+  display: block;
+  width: 275px;
+  height: 2px;
+  background: $color-brand;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.title__name:after {
+  content: "";
+  display: block;
+  width: 275px;
+  height: 2px;
+  background: $color-brand;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.title__name-portfolio {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 700px;
+  position: relative;
+}
+
+.title__name-portfolio:before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 2px;
+  background: $color-brand;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.title__name-portfolio:after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 2px;
+  background: $color-brand;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+
+
+
+
+
+
+
+
+ 
+  
+
+

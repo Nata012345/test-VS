@@ -1,0 +1,115 @@
+.footer {
+  background: $colorBackground;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.footer__container {
+  padding: 50px 0 50px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-space-between {
+  margin:0 26px 0 0;
+}
+
+.left-container__icon-footer {
+  background-image: url(image/social_icons/©.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.left-container__year {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.left-container__link {
+  color: $color-text;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 50px;
+  &:hover {
+    color: $color-brand;
+  }
+}
+
+.central-container {
+  text-align: center;
+}
+
+.central-row {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: $color-text;
+  &:hover {
+    color: $color-brand;
+  }
+}
+
+.social__links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 7px 0 7px;
+}
+
+.social__icon {
+  //margin: 0 0 0 25px;
+  align-items: center;
+  display: inline-block;
+}
+
+.icon-inst {
+  background-image: url(image/social_icons/inst1.svg);
+  width: 32px;
+  height: 32px;
+  &:hover {
+    background-image: url(image/social_icons/inst2.svg);
+  }
+}
+
+.icon-facebook {
+  margin: 0 0 0 20px;
+  background-image: url(image/social_icons/fb1.svg);
+  width: 32px;
+  height: 32px;
+  &:hover {
+    background-image: url(image/social_icons/fb2.svg);
+  }
+}
+
+.icon-twitter {
+  margin: 0 0 0 20px;
+  background-image: url(image/social_icons/tw1.svg);
+  width: 32px;
+  height: 32px;
+  &:hover {
+    background-image: url(image/social_icons/tw2.svg);
+  }
+}
+
+.icon-pinterest {
+  margin: 0 0 0 20px;
+  background-image: url(image/social_icons/pinterest1.svg);
+  width: 32px;
+  height: 32px;
+  &:hover {
+    background-image: url(image/social_icons/pinterest2.svg);
+  }
+}
