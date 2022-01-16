@@ -336,7 +336,7 @@ h6 {
   justify-content: space-around;
 }
 .layout-4-column > * {
-  flex-basis: 23%;
+  flex-basis: 20%;
 }
 .layout-3-column {
   display: flex;
@@ -500,7 +500,6 @@ h6 {
 
 .skills {
   background: #000000;
-  padding: 0 20px;
 }
 
 .skills__wrapper {
@@ -514,7 +513,19 @@ h6 {
   }
 }
 
-.skill-card {
+.skill-card1 {
+  max-width: 280px;
+}
+
+.skill-card2 {
+  max-width: 280px;
+}
+
+.skill-card3 {
+  max-width: 280px;
+}
+
+.skill-card4 {
   max-width: 280px;
 }
 

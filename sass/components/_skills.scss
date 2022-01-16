@@ -1,6 +1,6 @@
 .skills {
   background: $colorBackground;
-  padding: 0 20px;
+  //padding: 0 20px;
 }
 
 .skills__wrapper{
@@ -16,7 +16,20 @@
   }
 }
 
-.skill-card {
+.skill-card1 {
+  max-width: 280px;
+  
+}
+
+.skill-card2 {
+  max-width: 280px;
+}
+
+.skill-card3 {
+  max-width: 280px;
+}
+
+.skill-card4 {
   max-width: 280px;
 }
 
