@@ -10,7 +10,7 @@
 @mixin columns4 ($width) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   >* {
     flex-basis: $width;
   }
