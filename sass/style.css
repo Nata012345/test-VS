@@ -341,7 +341,7 @@ h6 {
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .layout-3-column > * {
   flex-basis: 31.5%;
