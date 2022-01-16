@@ -6,15 +6,8 @@ html {
 
 body {
   font-size: 1.8rem;
-  background-color: #c2b6af;
   margin: 0;
   color: #ffffff;
-}
-
-.main {
-  background: #000000;
-  max-width: 1440px;
-  margin: auto;
 }
 
 h1 {
@@ -25,6 +18,13 @@ h1 {
   line-height: 120px;
   color: #ffffff;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+  }
+}
 
 h2 {
   font-family: "Merriweather";
@@ -33,6 +33,12 @@ h2 {
   font-size: 40px;
   line-height: 80px;
   color: #bdae82;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h3 {
@@ -72,7 +78,8 @@ h6 {
 }
 
 .button {
-  padding: 7px 72px 7px 71px;
+  width: 220px;
+  height: 55px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -102,21 +109,16 @@ h6 {
   color: #ffffff;
 }
 
-.button_colored-longText {
-  padding: 7px 39px 7px 39px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 4rem;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-
 .icon {
   display: inline-block;
   cursor: pointer;
   transition: all 0.4s;
+}
+
+.title__text {
+  padding: 5px 20px;
+  background-color: #000000;
+  z-index: 2;
 }
 
 .title {
@@ -140,6 +142,12 @@ h6 {
   left: 0;
   top: 50%;
 }
+@media (max-width: 768px) {
+  .title__name:before {
+    width: 115px;
+    left: 170px;
+  }
+}
 
 .title__name:after {
   content: "";
@@ -148,8 +156,14 @@ h6 {
   height: 2px;
   background: #bdae82;
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 50%;
+}
+@media (max-width: 768px) {
+  .title__name:after {
+    width: 115px;
+    right: 170px;
+  }
 }
 
 .title__name-portfolio {
@@ -181,10 +195,42 @@ h6 {
   top: 50%;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  height: 2px;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 50px;
+  height: 28px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger:before {
+  top: 0;
+  right: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  right: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1px);
+}
+
 .wrapper {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .header {
@@ -192,12 +238,24 @@ h6 {
   background-repeat: no-repeat;
   background-position: center 0;
 }
+@media (max-width: 768px) {
+  .header {
+    background-image: url(image/headerBackTablet.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+}
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 20px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 20px 64px 20px 60px;
+  }
 }
 
 .icon_header {
@@ -207,6 +265,12 @@ h6 {
 }
 .icon_header:hover {
   background-image: url(image/header-hover.svg);
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .navigation {
@@ -272,9 +336,8 @@ h6 {
   justify-content: space-around;
 }
 .layout-4-column > * {
-  flex-basis: 20%;
+  flex-basis: 23%;
 }
-
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
@@ -284,14 +347,9 @@ h6 {
   flex-basis: 31.5%;
 }
 
-.footer {
-  background: #000000;
-  max-width: 1440px;
-  margin: auto;
-}
-
 .footer__container {
-  padding: 50px 0 50px;
+  background: #000000;
+  padding: 50px 20px;
 }
 
 .left-container {
@@ -405,6 +463,14 @@ h6 {
   background-position: center -90px;
   height: 820px;
 }
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(image/headerBackTablet.png);
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 500px;
+  }
+}
 
 .hero__container {
   width: 470px;
@@ -426,16 +492,30 @@ h6 {
   font-size: 2rem;
   line-height: 4rem;
 }
+@media (max-width: 768px) {
+  .hero__text {
+    line-height: 2.42rem;
+  }
+}
 
 .skills {
   background: #000000;
-  max-width: 1440px;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .skills__wrapper {
   padding-bottom: 100px;
   padding-top: 98px;
+}
+
+@media (max-width: 768px) {
+  .skill-cards > * {
+    flex-basis: 50%;
+  }
+}
+
+.skill-card {
+  max-width: 280px;
 }
 
 .skill-card__icon {
@@ -446,7 +526,6 @@ h6 {
   background-image: url(image/svg/camera1.svg);
   width: 62px;
   height: 50px;
-  padding-left: 20px;
   background-repeat: no-repeat;
 }
 
@@ -466,18 +545,16 @@ h6 {
   background-image: url(image/svg/mic1.svg);
   width: 32px;
   height: 50px;
-  margin-left: 25px;
 }
 
 .skill-card__title {
   text-align: center;
-  margin: 45px 0 0 0;
+  margin: 50px 0 20px 0;
 }
 
 .skill-card__text {
-  margin: 20px 0 10px 0;
+  margin: 0 0 6px 0;
   text-align: center;
-  max-width: 280px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -487,8 +564,7 @@ h6 {
 
 .portfolio {
   background: #000000;
-  max-width: 1440px;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .portfolio__wrapper {
@@ -506,8 +582,7 @@ h6 {
 
 .video {
   background: #000000;
-  max-width: 1440px;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .video__wrapper {
@@ -521,6 +596,19 @@ h6 {
   align-items: center;
 }
 
+.video-player__video {
+  background-image: url(image/video-player.png);
+  width: 1400px;
+  height: 705px;
+}
+@media (max-width: 768px) {
+  .video-player__video {
+    background-image: url(image/video-playerTablet.png);
+    width: 768px;
+    height: 418px;
+  }
+}
+
 .button-round {
   background: transparent;
   border: none;
@@ -531,18 +619,28 @@ h6 {
   cursor: pointer;
   transition: all 0.4s;
 }
+@media (max-width: 768px) {
+  .button-round {
+    background-image: url(image/svg/video-icoTablet.svg);
+    width: 65px;
+    height: 65px;
+  }
+}
 .button-round:hover {
   background-image: url(image/svg/video-icon-hover.svg);
 }
 
 .price {
-  max-width: 1440px;
   background: #000000;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .price__wrapper {
   padding-bottom: 100px;
+}
+
+.price-container > * {
+  flex-basis: 100%;
 }
 
 .bigCard_bordered {
@@ -596,6 +694,7 @@ h6 {
 }
 
 .form {
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

@@ -2,13 +2,24 @@
   background-image: url(image/headerMax.png);
   background-repeat: no-repeat;
   background-position: center 0;
+  @include media-tablet {
+    background-image: url(image/headerBackTablet.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    // width: 768px;
+    //height: 590px;
+   
+  }
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 20px;
+  padding: 20px;
+  @include media-tablet {
+    padding: 20px 64px 20px 60px;
+  }
 }
 
 .icon_header {
@@ -17,6 +28,12 @@
   height: 40px;
   &:hover {
     background-image: url(image/header-hover.svg);
+  }
+}
+
+.header__nav {
+  @include media-tablet {
+    display: none;
   }
 }
 
@@ -55,6 +72,9 @@
   font-weight: 400;
   font-size: 2.0rem;
   line-height: 5.0rem;
+  // @include media-tablet {
+  //   padding-left: 260px;
+  // }
 }
 
 .en-ru {

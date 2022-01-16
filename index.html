@@ -12,24 +12,30 @@
 </head>
 <body class="body">
   <header class="header">
-    <div class="wrapper header__wrapper">
-      <span class="icon icon_header"></span>
-      <div class="header-right-container">
-        <nav class="header__nav">
-          <ul class="navigation">
-            <li><a class="navigation_link" href="#section-skills">Skills</a></li>
-            <li><a class="navigation_link" href="#section-portfolio">Portfolio</a></li>
-            <li><a class="navigation_link" href="#section-video">Video</a></li>
-            <li><a class="navigation_link" href="#section-price">Price</a></li>
-            <li><a class="navigation_link" href="#section-contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="laguage">
-          <ul class="en-ru">
-            <li class="lang lang-en">en</li>
-            <li class="lang lang-ru">ru</li>
-          </ul>
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <span class="icon icon_header"></span>
+        <div class="header-right-container">
+          <nav class="header__nav">
+            <ul class="navigation">
+              <li><a class="navigation_link" href="#section-skills">Skills</a></li>
+              <li><a class="navigation_link" href="#section-portfolio">Portfolio</a></li>
+              <li><a class="navigation_link" href="#section-video">Video</a></li>
+              <li><a class="navigation_link" href="#section-price">Price</a></li>
+              <li><a class="navigation_link" href="#section-contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="laguage">
+            <ul class="en-ru">
+              <li class="lang lang-en">en</li>
+              <li class="lang lang-ru">ru</li>
+            </ul>
+          </div>
+          
         </div>
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+        </span>
       </div>
     </div>
   </header>
@@ -49,35 +55,37 @@
           <div class="title">
             <h2 class="title__name"><span class="title__text">Skills</span></h2>
           </div>
-          <div class="layout-4-column">
-            <div class="skill-card">
-              <div class="skill-card__icon">
-                  <span class="icon icon-skills icon_digital"></span>
+          <div class="layout-4-column skill-cards">
+            
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                    <span class="icon icon-skills icon_digital"></span>
+                </div>
+                <h4 class="skill-card__title">Digital photography</h4>
+                <p class="skill-card__text">High-quality photos in the studio and on the nature</p>
               </div>
-              <h4 class="skill-card__title">Digital photography</h4>
-              <p class="skill-card__text">High-quality photos in the studio and on the nature</p>
-            </div>
-            <div class="skill-card">
-              <div class="skill-card__icon">
-                <span class="icon icon-skills icon_video"></span>
-              </div>  
-              <h4 class="skill-card__title">Video shooting</h4>
-              <p class="skill-card__text">Capture your moments so that they always stay with you</p>
-            </div>
-            <div class="skill-card">
-              <div class="skill-card__icon">
-                <span class="icon icon-skills icon_retouch"></span>
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <span class="icon icon-skills icon_video"></span>
+                </div>  
+                <h4 class="skill-card__title">Video shooting</h4>
+                <p class="skill-card__text">Capture your moments so that they always stay with you</p>
               </div>
-              <h4 class="skill-card__title">Retouch</h4>
-              <p class="skill-card__text">I strive to make photography surpass reality</p>
-            </div>
-            <div class="skill-card">
-              <div class="skill-card__icon">
-                <span class="icon icon-skills icon_audio"></span>
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <span class="icon icon-skills icon_retouch"></span>
+                </div>
+                <h4 class="skill-card__title">Retouch</h4>
+                <p class="skill-card__text">I strive to make photography surpass reality</p>
               </div>
-              <h4 class="skill-card__title">Audio</h4>
-              <p class="skill-card__text">Professional sounds recording for video, advertising, portfolio</p>
-            </div>
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <span class="icon icon-skills icon_audio"></span>
+                </div>
+                <h4 class="skill-card__title">Audio</h4>
+                <p class="skill-card__text">Professional sounds recording for video, advertising, portfolio</p>
+              </div>
+            
           </div>
         </div>
       </section>
@@ -108,7 +116,8 @@
             <h2 class="title__name"><span class="title__text">Video</span></h2>
           </div>
           <div class="video-player">
-            <div class="video-player__video"><img src="sass/image/video-player.jpg" alt="Picture"></div>
+            <span class="video-player__video"></span>
+            <!-- <img src="sass/image/video-player.jpg" alt="Picture"> -->
             <button class="button-round"></button>
           </div>
         </div>
@@ -118,7 +127,53 @@
           <div class="title">
             <h2 class="title__name"><span class="title__text">Price</span></h2>
           </div>
-          <div class="layout-3-column">
+          <div class="price-container">
+            <div class="layout-3-column">
+              <div class="bigCard bigCard_bordered">
+                <h3 class="bigCard__title">Standart</h3>
+                <p class="bigCard__price">500 $</p>
+                <div class="bigCard__text">
+                  <p class="text">One location</p>
+                  <p class="text">120 photos in color</p>
+                  <p class="text">12 photos in retouch</p>
+                  <p class="text">Readiness 2-3 weeks</p>
+                  <p class="text">Make up, visage</p>
+                </div>
+                <div class="bigCard__button">
+                  <button class="button button_colored button_colored-longText">Order shooting</button>
+                </div>
+              </div>
+              <div class="bigCard bigCard_bordered">
+                <h3 class="bigCard__title">Premium</h3>
+                <p class="bigCard__price">700 $</p>
+                <div class="bigCard__text">
+                  <p class="text">One or two locations</p>
+                  <p class="text">200 photos in color</p>
+                  <p class="text">20 photos in retouch</p>
+                  <p class="text">Readiness 1-2 weeks</p>
+                  <p class="text">Make up, visage</p>
+                </div>
+                <div class="bigCard__button">
+                  <button class="button button_colored button_colored-longText">Order shooting</button>
+                </div>
+              </div>
+              <div class="bigCard bigCard_bordered">
+                <h3 class="bigCard__title">Gold </h3>
+                <p class="bigCard__price">1000 $</p>
+                <div class="bigCard__text">
+                  <p class="text">Tree locations or more</p>
+                  <p class="text">300 photos in color</p>
+                  <p class="text">50 photos in retouch</p>
+                  <p class="text">Readiness 1 weeks</p>
+                  <p class="text">Make up, visage, hairstyle</p>
+                </div>
+                <div class="bigCard__button">
+                  <button class="button button_colored button_colored-longText">Order shooting</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="layout-3-column">
             <div class="bigCard bigCard_bordered">
               <h3 class="bigCard__title">Standart</h3>
               <p class="bigCard__price">500 $</p>
@@ -132,8 +187,8 @@
               <div class="bigCard__button">
                 <button class="button button_colored button_colored-longText">Order shooting</button>
               </div>
-            </div>
-            <div class="bigCard bigCard_bordered">
+            </div> -->
+            <!-- <div class="bigCard bigCard_bordered">
               <h3 class="bigCard__title">Premium</h3>
               <p class="bigCard__price">700 $</p>
               <div class="bigCard__text">
@@ -146,8 +201,8 @@
               <div class="bigCard__button">
                 <button class="button button_colored button_colored-longText">Order shooting</button>
               </div>
-            </div>
-            <div class="bigCard bigCard_bordered">
+            </div> -->
+            <!-- <div class="bigCard bigCard_bordered">
               <h3 class="bigCard__title">Gold </h3>
               <p class="bigCard__price">1000 $</p>
               <div class="bigCard__text">
@@ -161,7 +216,7 @@
                 <button class="button button_colored button_colored-longText">Order shooting</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="section-contacts" class="contacts contact__image">
@@ -171,7 +226,7 @@
               <input type="tel" name="tel" placeholder="Phone" class="form__tel">
               <textarea name="message" placeholder="Message" class="form__message"></textarea>
               <div class="contacts__button">
-                  <button class="button_colored button_colored-longText">Send message</button>
+                  <button class="button button_colored">Send message</button>
               </div>
           </form>
       </section>

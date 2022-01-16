@@ -5,18 +5,8 @@ html {
 
 body {
   font-size: 1.8rem;
-  background-color: #c2b6af;
   margin: 0;
   color: $color-text;
-  
-
-}
-
-.main {
-  background: $colorBackground;
-  max-width: 1440px;
-  margin: auto;
-  
 }
 
 h1 {
@@ -26,6 +16,11 @@ h1 {
   font-size: 60px;
   line-height: 120px;
   color: $color-text;
+  @include media-tablet {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+  }
 }
 
 h2 {
@@ -35,6 +30,10 @@ h2 {
   font-size: 40px;
   line-height: 80px;
   color: $color-brand;
+  @include media-tablet {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h3 {

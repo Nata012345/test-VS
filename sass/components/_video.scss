@@ -1,7 +1,6 @@
 .video {
   background: $colorBackground;
-  max-width: 1440px;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .video__wrapper {
@@ -10,10 +9,20 @@
 
 .video-player{
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-player__video {
+    background-image: url(image/video-player.png);
+    width: 1400px;
+    height: 705px;
+  @include media-tablet {
+    background-image: url(image/video-playerTablet.png);
+    width: 768px;
+    height: 418px;
+  }
 }
 
 .button-round {
@@ -25,6 +34,11 @@
   height: 130px;
   cursor: pointer;
   transition: all .4s;
+  @include media-tablet {
+    background-image: url(image/svg/video-icoTablet.svg);
+    width: 65px;
+    height: 65px;
+  }
   &:hover {
     background-image: url(image/svg/video-icon-hover.svg);
   }

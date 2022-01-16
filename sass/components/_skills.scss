@@ -1,12 +1,23 @@
 .skills {
   background: $colorBackground;
-  max-width: 1440px;
-  margin: auto;
+  padding: 0 20px;
 }
 
 .skills__wrapper{
   padding-bottom: 100px;
   padding-top: 98px;
+}
+
+.skill-cards {
+  @include media-tablet {
+    >* {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.skill-card {
+  max-width: 280px;
 }
 
 .skill-card__icon {
@@ -17,7 +28,7 @@
   background-image: url(image/svg/camera1.svg);
   width: 62px;
   height: 50px;
-  padding-left: 20px;
+  //padding-left: 20px;
   background-repeat: no-repeat;
 }  
 
@@ -37,18 +48,17 @@
   background-image: url(image/svg/mic1.svg);
   width: 32px;
   height: 50px;
-  margin-left: 25px;
+  //margin-left: 25px;
 }
 
 .skill-card__title {
   text-align: center;
-  margin: 45px 0 0 0;
+  margin: 50px 0 20px 0;
 }
 
 .skill-card__text {
-  margin: 20px 0 10px 0;
+  margin: 0  0  6px 0;
   text-align: center;
-  max-width: 280px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
