@@ -116,13 +116,18 @@ h6 {
 }
 
 .title__text {
-  padding: 5px 20px;
+  padding: 5px 21px;
   background-color: #000000;
   z-index: 2;
 }
 
 .title {
   padding-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .title {
+    padding-bottom: 80px;
+  }
 }
 
 .title__name {
@@ -183,6 +188,12 @@ h6 {
   left: 0;
   top: 50%;
 }
+@media (max-width: 768px) {
+  .title__name-portfolio:before {
+    width: 90px;
+    left: 170px;
+  }
+}
 
 .title__name-portfolio:after {
   content: "";
@@ -193,6 +204,12 @@ h6 {
   position: absolute;
   right: 0;
   top: 50%;
+}
+@media (max-width: 768px) {
+  .title__name-portfolio:after {
+    width: 90px;
+    right: 170px;
+  }
 }
 
 .hamburger__line, .hamburger:after, .hamburger:before {
@@ -475,8 +492,13 @@ h6 {
 .hero__container {
   width: 470px;
   padding-top: 160px;
-  padding-bottom: 300px;
   padding-left: 80px;
+}
+@media (max-width: 768px) {
+  .hero__container {
+    padding-left: 60px;
+    padding-top: 78px;
+  }
 }
 
 .hero__title {
@@ -495,6 +517,7 @@ h6 {
 @media (max-width: 768px) {
   .hero__text {
     line-height: 2.42rem;
+    margin: 20px 0 40px 0;
   }
 }
 
@@ -503,7 +526,7 @@ h6 {
 }
 
 .skills__wrapper {
-  padding-bottom: 100px;
+  padding-bottom: 84px;
   padding-top: 98px;
 }
 
@@ -550,15 +573,25 @@ h6 {
   text-align: center;
   margin: 50px 0 20px 0;
 }
+@media (max-width: 768px) {
+  .skill-card__title {
+    margin: 30px 0 20px 0;
+  }
+}
 
 .skill-card__text {
-  margin: 0 0 6px 0;
+  margin: 0 0 76px 0;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
+}
+@media (max-width: 768px) {
+  .skill-card__text {
+    line-height: 22px;
+  }
 }
 
 .portfolio {
@@ -572,16 +605,20 @@ h6 {
 
 .seasons {
   padding: 0 0 60px;
-  text-align: center;
-}
-
-.portfolio__block {
-  row-gap: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 5px;
 }
 
 .video {
   background: #000000;
   padding: 0 20px;
+}
+@media (max-width: 768px) {
+  .video {
+    padding: 0px;
+  }
 }
 
 .video__wrapper {
@@ -627,6 +664,11 @@ h6 {
 }
 .button-round:hover {
   background-image: url(image/svg/video-icon-hover.svg);
+}
+@media (max-width: 768px) {
+  .button-round:hover {
+    background-image: url(image/svg/video-icon-hover.svg);
+  }
 }
 
 .price {

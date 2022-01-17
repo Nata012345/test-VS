@@ -8,6 +8,11 @@
   padding: 50px 20px;
 }
 
+.main-container {
+   @include media-tablet {
+   }  
+}
+
 .left-container {
   display: flex;
   align-items: center;
@@ -70,7 +75,6 @@
 }
 
 .social__icon {
-  //margin: 0 0 0 25px;
   align-items: center;
   display: inline-block;
 }
