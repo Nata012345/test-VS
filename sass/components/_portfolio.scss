@@ -13,14 +13,24 @@
   justify-content: center;
   align-content: space-between;
   gap: 5px;
+  @include media-tablet {
+    >* button {
+      width: 445px;
+      //flex-basis: 50%;
+    }
+  }
 }
 
+// .seasons-tablet {
+  
+//   }
+// }
+
 .portfolio__block {
-  // *> {
-  //   margin-bottom: 25px;
-  // }
-  //row-gap: 25px;
-  //align-items: center;
-  //justify-content: center;
+  gap: 25px;
+  @include media-tablet {
+    justify-content: center;
+    gap: 25px;
+  }
 }
 
