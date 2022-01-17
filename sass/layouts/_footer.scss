@@ -1,6 +1,9 @@
 .footer__container {
   background: $colorBackground;
   padding: 50px 20px;
+  @include media-tablet {
+    padding: 28px 42px;
+  }
 }
 
 .main-container {
@@ -13,10 +16,16 @@
 .left-container {
   display: flex;
   align-items: center;
+  @include media-tablet {
+    margin-bottom: 16px;
+  }
 }
 
 .left-space-between {
   margin:0 26px 0 0;
+  @include media-tablet {
+    margin:0 20px 0 0;
+  }
 }
 
 .left-container__icon-footer {
@@ -31,6 +40,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 50px;
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .left-container__link {
@@ -44,10 +57,17 @@
   &:hover {
     color: $color-brand;
   }
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24.2px;
+  }
 }
 
 .central-container {
   text-align: center;
+  @include media-tablet {
+    margin-bottom: 31px;
+  }
 }
 
 .central-row {
@@ -61,6 +81,9 @@
   color: $color-text;
   &:hover {
     color: $color-brand;
+  }
+  @include media-tablet {
+    line-height: 24.2px;
   }
 }
 
