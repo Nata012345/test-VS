@@ -708,7 +708,7 @@ h6 {
 }
 @media (max-width: 768px) {
   .video-player__video {
-    background-image: url(image/video-playerTablet.png);
+    background-image: url(image/1f63a396f05c05edb51d911579be7b3d.jpeg);
     width: 768px;
     height: 418px;
   }
@@ -736,7 +736,7 @@ h6 {
 }
 @media (max-width: 768px) {
   .button-round:hover {
-    background-image: url(image/svg/video-icon-hover.svg);
+    display: none;
   }
 }
 

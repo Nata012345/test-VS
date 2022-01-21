@@ -22,9 +22,10 @@
     width: 1400px;
     height: 705px;
   @include media-tablet {
-    background-image: url(image/video-playerTablet.png);
+    background-image: url(image/1f63a396f05c05edb51d911579be7b3d.jpeg);
     width: 768px;
     height: 418px;
+    
   }
 }
 
@@ -45,7 +46,7 @@
   &:hover {
     background-image: url(image/svg/video-icon-hover.svg);
     @include media-tablet {
-      background-image: url(image/svg/video-icon-hover.svg);
+      display: none;
     }
   }
 }
