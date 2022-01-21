@@ -476,6 +476,11 @@ h6 {
   list-style: none;
   margin: 7px 0 7px;
 }
+@media (max-width: 768px) {
+  .social__links {
+    padding-inline-start: 0;
+  }
+}
 
 .social__icon {
   align-items: center;
@@ -654,12 +659,14 @@ h6 {
   padding: 0 0 60px;
   display: flex;
   justify-content: center;
-  align-content: space-between;
   gap: 5px;
 }
 @media (max-width: 768px) {
-  .seasons > * button {
+  .seasons {
+    justify-content: center;
+    flex-wrap: wrap;
     width: 445px;
+    margin: auto;
   }
 }
 
@@ -742,10 +749,6 @@ h6 {
   padding-bottom: 102px;
 }
 
-.price-container > * {
-  flex-basis: 100%;
-}
-
 .bigCard_bordered {
   border: 3px solid #bdae82;
 }
@@ -809,6 +812,12 @@ h6 {
   margin: 0;
   padding: 60px 0 38px;
 }
+@media (max-width: 768px) {
+  .form__title {
+    line-height: 64px;
+    padding: 60px 0 40px;
+  }
+}
 
 .form input, .form textarea {
   max-width: 450px;
@@ -846,6 +855,11 @@ h6 {
 
 .form__tel {
   margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .form__tel {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

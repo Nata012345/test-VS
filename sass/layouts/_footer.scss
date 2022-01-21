@@ -92,6 +92,9 @@
   justify-content: flex-end;
   list-style: none;
   margin: 7px 0 7px;
+  @include media-tablet {
+    padding-inline-start: 0;
+  }
 }
 
 .social__icon {

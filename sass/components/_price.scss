@@ -8,8 +8,16 @@
 }
 
 .price-container {
-  >* {
-    flex-basis: 100%;
+  // >* {
+  //   flex-basis: 100%;
+  // }
+}
+
+.price-inblock {
+   >* {
+    @include media-tablet {
+      // width: 100%;
+    }
   }
 }
 
