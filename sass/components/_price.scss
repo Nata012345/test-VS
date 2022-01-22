@@ -14,9 +14,12 @@
 }
 
 .price-inblock {
+  gap: 50px;
    >* {
     @include media-tablet {
-      // width: 100%;
+      flex-wrap: wrap;
+      flex-basis: 55%;
+      margin: auto;
     }
   }
 }

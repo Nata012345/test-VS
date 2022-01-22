@@ -749,6 +749,17 @@ h6 {
   padding-bottom: 102px;
 }
 
+.price-inblock {
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .price-inblock > * {
+    flex-wrap: wrap;
+    flex-basis: 55%;
+    margin: auto;
+  }
+}
+
 .bigCard_bordered {
   border: 3px solid #bdae82;
 }
@@ -794,9 +805,21 @@ h6 {
   background-repeat: no-repeat;
   background-position: center 0;
 }
+@media (max-width: 768px) {
+  .contacts {
+    background-image: url(image/background_contact-tablet.jpeg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+}
 
 .contact__image {
   height: 700px;
+}
+@media (max-width: 768px) {
+  .contact__image {
+    height: 600px;
+  }
 }
 
 .form {

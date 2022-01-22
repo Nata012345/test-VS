@@ -2,10 +2,19 @@
   background-image: url(image/background_contact.jpeg);
   background-repeat: no-repeat;
   background-position: center 0;
+  @include media-tablet {
+    background-image: url(image/background_contact-tablet.jpeg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  
 }
 
 .contact__image {
   height: 700px;
+  @include media-tablet {
+    height: 600px;
+  }
 }
 
 .form {
