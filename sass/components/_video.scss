@@ -19,14 +19,17 @@
 
 .video-player__video {
     background-image: url(image/video-player.png);
+    background-repeat: no-repeat;
+      background-position: center 0;
     width: 1400px;
     height: 705px;
   @include media-tablet {
-    background-image: url(image/1f63a396f05c05edb51d911579be7b3d.jpeg);
-    width: 768px;
-    height: 418px;
-    
-  }
+      background-image: url(image/1f63a396f05c05edb51d911579be7b3d.jpeg);
+      background-repeat: no-repeat;
+      background-position: center 0;
+      height: 418px;
+      width: 768px;
+    }
 }
 
 .button-round {

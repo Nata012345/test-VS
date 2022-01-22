@@ -7,14 +7,7 @@
   padding-bottom: 102px;
 }
 
-.price-container {
-  // >* {
-  //   flex-basis: 100%;
-  // }
-}
-
 .price-inblock {
-  gap: 50px;
    >* {
     @include media-tablet {
       flex-wrap: wrap;
@@ -26,6 +19,9 @@
 
 .bigCard_bordered {
   border: 3px solid $color-brand;
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
 }
 
 .bigCard__title {

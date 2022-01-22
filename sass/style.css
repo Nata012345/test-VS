@@ -550,6 +550,7 @@ h6 {
   .hero__container {
     padding-left: 60px;
     padding-top: 78px;
+    width: 390px;
   }
 }
 
@@ -569,7 +570,7 @@ h6 {
 @media (max-width: 768px) {
   .hero__text {
     line-height: 2.42rem;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 60px 0;
   }
 }
 
@@ -703,14 +704,18 @@ h6 {
 
 .video-player__video {
   background-image: url(image/video-player.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
   width: 1400px;
   height: 705px;
 }
 @media (max-width: 768px) {
   .video-player__video {
     background-image: url(image/1f63a396f05c05edb51d911579be7b3d.jpeg);
-    width: 768px;
+    background-repeat: no-repeat;
+    background-position: center 0;
     height: 418px;
+    width: 768px;
   }
 }
 
@@ -749,9 +754,6 @@ h6 {
   padding-bottom: 102px;
 }
 
-.price-inblock {
-  gap: 50px;
-}
 @media (max-width: 768px) {
   .price-inblock > * {
     flex-wrap: wrap;
@@ -762,6 +764,11 @@ h6 {
 
 .bigCard_bordered {
   border: 3px solid #bdae82;
+}
+@media (max-width: 768px) {
+  .bigCard_bordered {
+    margin-bottom: 50px;
+  }
 }
 
 .bigCard__title {
