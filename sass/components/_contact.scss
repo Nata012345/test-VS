@@ -24,6 +24,9 @@
   justify-content: flex-end;
   width: 450px;
   margin-left: auto;
+  @include media-mobile {
+    width: 300px;
+  }
 }
 
 .form__title {

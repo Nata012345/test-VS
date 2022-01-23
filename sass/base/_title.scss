@@ -31,6 +31,14 @@
   @include media-tablet {
     width: 115px;
     left: 170px;
+    @include media-mobile-max {
+      //display: none;
+       width: 40px;
+       left: 120px;
+    }
+    @include media-mobile {
+      display: none;
+    }
   }
 }
 
@@ -46,7 +54,13 @@
   @include media-tablet {
     width: 115px;
     right: 170px;
-
+    @include media-mobile-max {
+      width: 40px;
+      right: 120px;
+    }
+    @include media-mobile-max {
+      display: none;
+    }
   }
 }
 
@@ -70,6 +84,13 @@
     width: 90px;
     left: 170px;
   }
+  @include media-mobile-max {
+    width: 40px;
+    left: 80px;
+  }
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .title__name-portfolio:after {
@@ -84,6 +105,13 @@
   @include media-tablet {
     width: 90px;
     right: 170px;
+  }
+  @include media-mobile-max {
+    width: 40px;
+    right: 80px;
+  }
+  @include media-mobile {
+    display: none;
   }
 }
 

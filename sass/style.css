@@ -153,6 +153,17 @@ h6 {
     left: 170px;
   }
 }
+@media (max-width: 768px) and (max-width: 460px) {
+  .title__name:before {
+    width: 40px;
+    left: 120px;
+  }
+}
+@media (max-width: 768px) and (max-width: 320px) {
+  .title__name:before {
+    display: none;
+  }
+}
 
 .title__name:after {
   content: "";
@@ -168,6 +179,17 @@ h6 {
   .title__name:after {
     width: 115px;
     right: 170px;
+  }
+}
+@media (max-width: 768px) and (max-width: 460px) {
+  .title__name:after {
+    width: 40px;
+    right: 120px;
+  }
+}
+@media (max-width: 768px) and (max-width: 460px) {
+  .title__name:after {
+    display: none;
   }
 }
 
@@ -194,6 +216,17 @@ h6 {
     left: 170px;
   }
 }
+@media (max-width: 460px) {
+  .title__name-portfolio:before {
+    width: 40px;
+    left: 80px;
+  }
+}
+@media (max-width: 320px) {
+  .title__name-portfolio:before {
+    display: none;
+  }
+}
 
 .title__name-portfolio:after {
   content: "";
@@ -209,6 +242,17 @@ h6 {
   .title__name-portfolio:after {
     width: 90px;
     right: 170px;
+  }
+}
+@media (max-width: 460px) {
+  .title__name-portfolio:after {
+    width: 40px;
+    right: 80px;
+  }
+}
+@media (max-width: 320px) {
+  .title__name-portfolio:after {
+    display: none;
   }
 }
 
@@ -566,6 +610,16 @@ h6 {
     width: 390px;
   }
 }
+@media (max-width: 768px) and (max-width: 460px) {
+  .hero__container {
+    width: 330px;
+  }
+}
+@media (max-width: 768px) and (max-width: 320px) {
+  .hero__container {
+    width: 220px;
+  }
+}
 
 .hero__title {
   margin: 0;
@@ -602,10 +656,22 @@ h6 {
     padding-bottom: 107px;
   }
 }
+@media (max-width: 460px) {
+  .skills__wrapper {
+    margin-left: 35px;
+    margin-right: 38px;
+    padding-bottom: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .skill-cards > * {
     flex-basis: 48%;
+  }
+}
+@media (max-width: 460px) {
+  .skill-cards > * {
+    flex-basis: 100%;
   }
 }
 
@@ -688,6 +754,14 @@ h6 {
     justify-content: center;
     flex-wrap: wrap;
     width: 445px;
+    margin: auto;
+  }
+}
+@media (max-width: 460px) {
+  .seasons {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 220px;
     margin: auto;
   }
 }
@@ -865,6 +939,11 @@ h6 {
   justify-content: flex-end;
   width: 450px;
   margin-left: auto;
+}
+@media (max-width: 320px) {
+  .form {
+    width: 300px;
+  }
 }
 
 .form__title {

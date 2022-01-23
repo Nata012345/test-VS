@@ -18,6 +18,12 @@
     width: 445px;
     margin: auto;
   }
+  @include media-mobile-max {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 220px;
+    margin: auto;
+  }
 }
 
 .portfolio__block {
