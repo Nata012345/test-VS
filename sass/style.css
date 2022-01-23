@@ -126,7 +126,7 @@ h6 {
 }
 @media (max-width: 768px) {
   .title {
-    padding-bottom: 80px;
+    padding-bottom: 67px;
   }
 }
 
@@ -340,7 +340,7 @@ h6 {
   line-height: 5rem;
 }
 .en-ru {
-  margin: 0;
+  margin: 0 20px 0 0;
   display: flex;
   list-style: none;
 }
@@ -592,7 +592,7 @@ h6 {
 }
 
 .skills__wrapper {
-  padding-bottom: 84px;
+  padding-bottom: 97px;
   padding-top: 98px;
 }
 
@@ -604,6 +604,30 @@ h6 {
 
 .skill-card {
   max-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .skill-card1 {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card3 {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card2 {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card4 {
+    padding-right: 20px;
+  }
 }
 
 .skill-card__icon {

@@ -3,7 +3,7 @@
 }
 
 .skills__wrapper{
-  padding-bottom: 84px;
+  padding-bottom: 97px;
   padding-top: 98px;
 }
 
@@ -17,7 +17,30 @@
 
 .skill-card {
   max-width: 280px;
-  
+}
+
+.skill-card1 {
+  @include media-tablet {
+    padding-left: 17px;
+  }
+}
+
+.skill-card3 {
+  @include media-tablet {
+    padding-left: 17px;
+  }
+}
+
+.skill-card2 {
+  @include media-tablet {
+    padding-right: 20px;
+  }
+}
+
+.skill-card4 {
+  @include media-tablet {
+    padding-right: 20px;
+  }
 }
 
 .skill-card__icon {
