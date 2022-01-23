@@ -715,6 +715,11 @@ h6 {
 .video__wrapper {
   padding-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .video__wrapper {
+    padding-bottom: 103px;
+  }
+}
 
 .video-player {
   position: relative;
