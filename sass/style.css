@@ -592,13 +592,20 @@ h6 {
 }
 
 .skills__wrapper {
-  padding-bottom: 107px;
+  padding-bottom: 97px;
   padding-top: 98px;
+}
+@media (max-width: 768px) {
+  .skills__wrapper {
+    margin-left: 35px;
+    margin-right: 38px;
+    padding-bottom: 107px;
+  }
 }
 
 @media (max-width: 768px) {
   .skill-cards > * {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
 }
 
@@ -657,6 +664,7 @@ h6 {
 @media (max-width: 768px) {
   .skill-card__text {
     line-height: 22px;
+    margin: 0 0 70px 0;
   }
 }
 

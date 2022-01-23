@@ -3,14 +3,20 @@
 }
 
 .skills__wrapper{
-  padding-bottom: 107px;
+  padding-bottom: 97px;
   padding-top: 98px;
+  @include media-tablet {
+    margin-left: 35px;
+    margin-right: 38px;
+    padding-bottom: 107px;
+  }
+  
 }
 
 .skill-cards {
   @include media-tablet {
     >* {
-      flex-basis: 50%;
+      flex-basis: 48%;
     }
   }
 }
@@ -51,7 +57,6 @@
   background-image: url(image/svg/camera1.svg);
   width: 62px;
   height: 50px;
-  //padding-left: 20px;
   background-repeat: no-repeat;
 }  
 
@@ -71,7 +76,6 @@
   background-image: url(image/svg/mic1.svg);
   width: 32px;
   height: 50px;
-  //margin-left: 25px;
 }
 
 .skill-card__title {
@@ -92,6 +96,42 @@
   line-height: 36px;
   @include media-tablet {
     line-height: 22px;
+    margin: 0  0  70px 0;
   }
 }
 
+// .skill-card__icon1 {
+//   @include media-tablet {
+//     margin-left: 35px;
+//   }
+// }
+
+// .kill-card__title1 {
+//   @include media-tablet {
+//     margin-left: 35px;
+//   }
+// }
+
+// .skill-card__text1 {
+//   @include media-tablet {
+//     margin-left: 34px;
+//   }
+// }
+
+// .skill-card__icon2 {
+//   @include media-tablet {
+//     margin-right: 40px;
+//   }
+// }
+
+// .kill-card__title2 {
+//   @include media-tablet {
+//     margin-right: 40px;
+//   }
+// }
+
+// .skill-card__text2 {
+//   @include media-tablet {
+//     margin-right: 18px;
+//   }
+// }
