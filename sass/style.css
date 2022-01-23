@@ -460,7 +460,7 @@ h6 {
 }
 @media (max-width: 768px) {
   .central-container {
-    margin-bottom: 31px;
+    margin-bottom: 24px;
   }
 }
 
@@ -606,30 +606,6 @@ h6 {
   max-width: 280px;
 }
 
-@media (max-width: 768px) {
-  .skill-card1 {
-    padding-left: 17px;
-  }
-}
-
-@media (max-width: 768px) {
-  .skill-card3 {
-    padding-left: 17px;
-  }
-}
-
-@media (max-width: 768px) {
-  .skill-card2 {
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .skill-card4 {
-    padding-right: 20px;
-  }
-}
-
 .skill-card__icon {
   text-align: center;
 }
@@ -750,6 +726,7 @@ h6 {
   .video-player__video {
     background-size: auto 418px;
     height: 418px;
+    background-position-x: 1.1px;
   }
 }
 
@@ -785,13 +762,13 @@ h6 {
 }
 
 .price__wrapper {
-  padding-bottom: 102px;
+  padding-bottom: 27px;
 }
 
 @media (max-width: 768px) {
   .price-inblock > * {
     flex-wrap: wrap;
-    flex-basis: 55%;
+    flex-basis: 57%;
     margin: auto;
   }
 }
@@ -807,7 +784,7 @@ h6 {
 
 .bigCard__title {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 42px 0 20px;
 }
 
 .bigCard__price {
@@ -818,7 +795,7 @@ h6 {
   font-size: 24px;
   line-height: 48px;
   color: #bdae82;
-  margin: 0 0 20px;
+  margin: 0 0 22px;
 }
 
 .bigCard__text {
@@ -914,7 +891,7 @@ h6 {
 }
 
 .form__email {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .form__tel {
@@ -922,7 +899,7 @@ h6 {
 }
 @media (max-width: 768px) {
   .form__tel {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
