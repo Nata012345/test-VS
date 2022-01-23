@@ -32,3 +32,15 @@
   @extend %hamburger-line;
   top: calc( 50% - 1px );
 }
+
+.hamburger.active:before{
+  transform: rotate(45deg);
+}
+
+.hamburger.active:after{
+  transform: rotate(-45deg);
+}
+
+.hamburger__line.active{
+  transform: scale(0);
+}

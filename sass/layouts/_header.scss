@@ -31,6 +31,11 @@
 .header__nav {
   @include media-tablet {
     display: none;
+    // top: 0;
+    // right: 0;
+    // height: 100%;
+    // width: 620px;
+    // padding: 134px 0 0 0;
   }
 }
 
@@ -43,6 +48,13 @@
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 5.0rem;
+  @include media-tablet {
+    // position: relative;
+    // z-index: 2;
+    // display: block;
+    // font-size: 3.5rem;
+    // line-height: 7.3rem;
+  }
 }
 
 .navigation_link {
@@ -50,6 +62,9 @@
   text-decoration: none;
   color: $color-text;
   transition: all .4s;
+  @include media-tablet {
+    // padding: 0 0 16px 67px;
+  }
 }
 
 .navigation_link:hover {
@@ -60,6 +75,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    // position: absolute;
+    // top: 0;
+    // right: -100%;
+    // width: 620px;
+    // height: 100%;
+    // background-color:black;
+    // transition: all .4s;
+    // overflow-x: hidden;
+    
+  }
+}
+
+.header-right-container.active{
+  top: 0;
+  
 }
 
 .laguage {
