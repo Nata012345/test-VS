@@ -31,7 +31,6 @@
 .header__nav {
   @include media-tablet {
     display: none;
-    
   }
 }
 
@@ -44,9 +43,6 @@
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 5.0rem;
-  @include media-tablet {
-    
-  }
 }
 
 .navigation_link {
@@ -54,9 +50,6 @@
   text-decoration: none;
   color: $color-text;
   transition: all .4s;
-  @include media-tablet {
-    
-  }
 }
 
 .navigation_link:hover {
@@ -67,15 +60,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include media-tablet {
-    
-    
-  }
-}
-
-.header-right-container.active{
-  top: 0;
-  
 }
 
 .laguage {
@@ -85,15 +69,15 @@
   font-weight: 700;
   font-size: 2.0rem;
   line-height: 5.0rem;
-  @include media-tablet {
-    
-  }
 }
 
 .en-ru {
-  margin: 0 20px 0 0;
+  margin: 0 0px 0 0;
   display: flex;
   list-style: none;
+  @include media-tablet {
+    margin: 0 70px 0 0;
+  }
 }
 
 .lang:hover {

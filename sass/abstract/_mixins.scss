@@ -14,9 +14,6 @@
   >* {
     flex-basis: $width;
   }
-  @include media-tablet {
-    //justify-content: space-between;
-  }
 }
 
 @mixin media-laptop {
