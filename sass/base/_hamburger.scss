@@ -1,4 +1,6 @@
 .hamburger-menu {
+  overflow: hidden;
+  //position: relative;
   display: none;
   @include media-tablet {
     display: block;
@@ -7,7 +9,7 @@
 
 .hamburger-menu__button {
   transition: all .4s;
-  position: absolute;
+  position: fixed;
   top:30px;
   right: 60px;
   z-index: 30;
@@ -21,7 +23,6 @@
 .hamburger__line, //оформляем линии внутри кнопки//спам центральная линия
 .hamburger__line::after,//нижняя линия
 .hamburger__line::before {//верхняя линия
-  transition: all .4s;
   position: absolute;
   height: 2px;
   width: 100%;
@@ -50,7 +51,6 @@
 
 .hamburger-menu_active .hamburger__line {
   background-color: transparent;
-
 }
 
 .hamburger-menu_active .hamburger__line::before {
@@ -63,59 +63,69 @@
   transform: rotate(-45deg);
 }
 
-// .hamburger-navigation {
- 
-//   top: -20px;
-//   transition: all .4s;
-//   padding-top: 134px;
-//   position: absolute;
-//   z-index: 20;
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%;
-//   width: 580px;
-//   background-color: #000;
-//   overflow-y: auto;
-//   right: -100%;
-//   list-style-type: none;
-  
-// }
+.hamburger {
+  overflow: hidden;
+}
 
-// .hamburger-menu_active .hamburger-navigation {
-//   right: 0;
-// }
+.hamburger-navigation {
+  overflow: hidden;
+  top: -20px;
+  transition: all .4s;
+  padding-top: 134px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  background-color: #000;
+  overflow-y: auto;
+  right: -100%;
+  list-style-type: none;
+  @include media-mobile-max {
+    width: 90%;
+    
+  }
+  @include media-mobile {
+    width: 85%;
+    
+  }
+}
 
-// .hamburger-navigation__link {
-//   transition: all .4s;
-//   padding-left: 127px;
-//   font-family: 'Inter', sans-serif;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 35px;
-//   line-height: 73px;
-//   color: $color-text;
-//   text-decoration: none;
-// }
+.hamburger-menu_active .hamburger-navigation {
+  right: 0;
+}
 
-// .hamburger-navigation__link:hover {
-//   color: $color-brand;
-// }
+.hamburger-navigation__link {
+  transition: all .4s;
+  padding-left: 127px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 73px;
+  color: $color-text;
+  text-decoration: none;
+}
 
-// .hamburger-nav-pad {
-//   padding-bottom: 16px;
-// }
+.hamburger-navigation__link:hover {
+  color: $color-brand;
+}
 
-// .hamburger-menu__overlay {
-  
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 10;
-// }
+.hamburger-nav-pad {
+  padding-bottom: 16px;
+}
 
-// .hamburger-menu_active .hamburger-menu__overlay {
-//   display: block;
-//   background-color: rgba(0, 0, 0, 0.5);
-// }
+.hamburger-menu__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.hamburger-menu_active .hamburger-menu__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
